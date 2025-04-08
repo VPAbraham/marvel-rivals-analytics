@@ -1,3 +1,66 @@
+## Project Planning Phase
+
+General application structure map:
+marvel-rivals-analytics/
+├── public/
+│ ├── images/
+│ │ └── heroes/
+│ ├── favicon.ico
+│ └── logo.svg
+├── src/
+│ ├── app/
+│ │ ├── api/
+│ │ │ ├── heroes/
+│ │ │ │ └── route.js
+│ │ │ ├── player-stats/
+│ │ │ │ └── route.js
+│ │ │ └── synergies/
+│ │ │ └── route.js
+│ │ ├── dashboard/  
+│ │ │ └── page.jsx
+│ │ ├── network/
+│ │ │ └── page.jsx
+│ │ ├── analyzer/
+│ │ │ └── page.jsx
+│ │ ├── layout.jsx
+│ │ └── page.jsx
+│ ├── components/
+│ │ ├── dashboard/
+│ │ │ ├── MarvelRivalsDashboard.jsx
+│ │ │ ├── HeroStatsChart.jsx
+│ │ │ └── MetaInsightsPanel.jsx
+│ │ ├── network/
+│ │ │ ├── HeroNetworkVisualization.jsx
+│ │ │ └── SynergyLegend.jsx
+│ │ ├── analyzer/
+│ │ │ ├── AIMatchAnalyzer.jsx
+│ │ │ ├── PerformanceChart.jsx
+│ │ │ └── RecommendationsPanel.jsx
+│ │ ├── layout/
+│ │ │ ├── Navbar.jsx
+│ │ │ └── Footer.jsx
+│ │ └── ui/ # Reusable UI components
+│ │ ├── Button.jsx
+│ │ ├── Card.jsx
+│ │ └── LoadingSpinner.jsx
+│ ├── hooks/
+│ │ ├── useHeroStats.js
+│ │ ├── usePlayerData.js
+│ │ └── useSynergies.js
+│ ├── lib/
+│ │ ├── api.js
+│ │ ├── d3-helpers.js  
+│ │ └── ai-analysis.js
+│ ├── types/
+│ │ └── index.ts
+│ └── styles/
+│ ├── globals.css
+│ └── components.css
+├── .env.local
+├── next.config.js
+├── package.json
+└── tailwind.config.js
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
